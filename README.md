@@ -61,8 +61,17 @@ sqft_lot15	| LotSize area in 2015(implies-- some renovations)
 Table with improper date format and unwanted columns |	Transformed table
 :-----------------:|:----------------------:
 ![](a_look(1).png) |	![](adjusting_dataset(1).png)
+
 ## Analysis
 To answer the first question of analyzing the numerical distribution of houses according to their number of floors, I wrote a code to count the occurrences of unique values in the 'Floors' column converting the results into a data frame as shown below.
+
 ![](Floors_and_counts.png)
 ---
+For the next question of which house features in the area correlate with/ significantly affect house pricing, a code was written to extract the R2 values for each feature to show how much each of them affect the house pricing. 0.3-0.4 show weak correlation and 0.5-0.7 show a moderate correlation.
 
+![](correlation.png)
+
+The moderate (0.5 R2) correlation of the square foot of houses **_"sqft_above"_** to their respective price is visualized below in a regression plot which shows that the larger the square foot of the house, the higher its price.
+
+![](Regplot.png)
+---
