@@ -17,6 +17,7 @@ The aim of this project is to exhibit my skills in analyzing housing data as wel
 The data was downloaded as a CSV file (kc_house_data.csv) from this page’s link address https://www.kaggle.com/datasets/harlfoxem/housesalesprediction in Kaggle.com. Using Python, Jupyter Notebooks, and the code displayed below, the CSV file was **downloaded** into Jupyter Notebooks and **loaded** into a Pandas Dataframe for effective analysis as seen below. 
 
 ![](Loaded_into_Pandas.png)
+---
 ### Description
 It is a real-world dataset which contains house sale prices for King County, and also includes some houses in Seattle. The dataset contains details of homes sold between May 2014 and May 2015. The table consisted of 21 columns before Data Transformation was carried out to make it just 19 columns and 21,613 rows representing 21,613 unique houses or residential buildings.
 Below is a table of the variables and their descriptions in the dataset.
@@ -44,6 +45,11 @@ long	| Longitude coordinate
 sqft_living15 | Living room area in 2015(implies-- some renovations) This might or might not have affected the lotsize area
 sqft_lot15	| LotSize area in 2015(implies-- some renovations)
 
+## Methodology
+---
+![](warnings_libraries.png)
+
+**Pandas** was used to create, edit and analyze data frames, **Matplotib** and **seaborn** for plotting regression and distribution plots, **Numpy** for statistical analysis, **Scikitlearn** was used to perform machine learning operations for predictive analysis. Of course, all these were done in a **Jupyter Notebook**.
 ## Data Transformation
 ### The following transformations were made to the dataset:
 - Missing values detected in the columns "bedrooms" and "bathrooms" were replaced with the mean values in eacn column.
@@ -56,5 +62,7 @@ Table with improper date format and unwanted columns |	Transformed table
 :-----------------:|:----------------------:
 ![](a_look(1).png) |	![](adjusting_dataset(1).png)
 ## Analysis
-To answer the question of 
+To answer the first question of analyzing the numerical distribution of houses according to their number of floors, I wrote a code to count the occurrences of unique values in the 'Floors' column converting the results into a data frame as shown below.
+![](Floors_and_counts.png)
+---
 
