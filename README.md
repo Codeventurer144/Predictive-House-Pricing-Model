@@ -120,4 +120,4 @@ Grade | 8
 - The predictive model works with 2015/16 housing data and does not put external factors like economic changes into consideration. Thus, either newer data can be used to augment the model's predictive accuracy, or the Real Estate Company manually predicts the price of each type of house they seek to invest in.
 - 
 ## License
-This project is licensed under [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
+This dataset used in this project is licensed under [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
