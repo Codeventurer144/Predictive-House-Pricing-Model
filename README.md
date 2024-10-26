@@ -84,11 +84,27 @@ Assuming the cause of this case of overfitting is due to multicollinearity (high
 ![](R2_2.png)	![](Dplot_2.png)
 
 Eureka! That's far better. The plot above shows that the Model can predict prices almost as accurately as they ought to be i.e. based on the original dataset.
-
+---
 I went ahead to carry out a 2nd order polynomial transform on the training and testing data but it did not come out any better than the previous model. The code I wrote and the visualization is below nonetheless.
 
 ![](2nd_order_polytransform.png)	![](Dplot_3.png)
-
+---
 In this final step, assuming the Real Estate Company wants to build a new set of houses at a waterfront, along with other specific features such as the ones in the table below, I simply input these features into the predictive model and watch what the price/output of the house would be.
 
+Total number of floors (levels) in each house | 3.5
+:-----------:|:----------------------:
+House must have a view to a waterfront (represented by) | 1
+Location | 47.5
+Number of bedrooms (in each house) | 4
+Basement square footage | 400
+Number of bathrooms | 2
+Living room area (in sqft.) | 2000
+Grade | 8
+
 ![](Price_Prediction.png)
+
+## Conclusions and Recommendations
+### Conlusions
+- Less houses have more floor than other most likely due to the costs of building, maintaining and even purchasing such residents
+- 
+---
