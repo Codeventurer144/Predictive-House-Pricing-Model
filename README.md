@@ -88,6 +88,7 @@ Assuming the cause of this case of overfitting is due to multicollinearity (high
 ![](R2_2.png)	![](Dplot_2.png)
 
 Eureka! That's much better. The plot above shows that the Model can predict prices almost as accurately as the prices ought to be i.e. based on the original dataset.
+
 ---
 I went ahead to carry out a 2nd order polynomial transform on the training and testing data but it did not come out any better than the previous model. The code I wrote and the visualization is below nonetheless.
 
@@ -107,8 +108,13 @@ Grade | 8
 
 ![](Price_Prediction.png)
 
-## Conclusions and Recommendations
-### Conlusions
+## Findings and Recommendations
+### Findings
 - Less number of houses have more floors than other most likely due to the costs of building, maintaining and even purchasing such residents
-- 
----
+- The size, grade, number of rooms, and location of each house greatly influences thier price.
+- The regression model works fine for the housing data. The amount predicted by it—about $1m— is understandable because of the outrageous living room size and other unrealistic features I put for the model to make predictions with.
+
+### Recommendations 
+- To save more cost, the Real Estate Company should consider investing in houses with smaller number of floors which would still yield profit and are cheaper to build. The abundance of small houses compared to the scarcity of taller ones shows that conditions in the area favour them more than taller ones.
+- For higher prices, the features which affect the price the most (as analyzed above) should be considered so that potential clients do not avoid the company's houses for already existing better and cheaper options.
+- The predictive model works with 2015/16 housing data and does not put external factors like economic changes into consideration. Thus, either newer data can be used to augment the model's predictive accuracy, or the Real Estate Company manually predicts the price of each type of house they seek to invest in. 
