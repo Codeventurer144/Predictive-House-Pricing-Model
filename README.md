@@ -75,3 +75,20 @@ The moderate (0.5 R2) correlation of the square foot of houses **_"sqft_above"_*
 
 ![](Regplot.png)
 ---
+The last question is where the real work🛠️ is. I had to create a Pipeline to pass the data through before it was used to train and test the predictive model. The Distribution plot below shows how well the model did in its prediction of prices compared to the distribution of the actual price data...not too well😅.
+
+![](R2_1.png)	![](Dplot_1.png)
+
+Assuming the cause of this case of overfitting is due to multicollinearity (high correlation between two or more features), the predicitive model needs ridge regression. Thankfully, a module in Python can help out. Let's see if the price prediction is similar after the RidgeRegression Module is applied in the code below.
+
+![](R2_2.png)	![](Dplot_2.png)
+
+Eureka! That's far better. The plot above shows that the Model can predict prices almost as accurately as they ought to be i.e. based on the original dataset.
+
+I went ahead to carry out a 2nd order polynomial transform on the training and testing data but it did not come out any better than the previous model. The code I wrote and the visualization is below nonetheless.
+
+![](2nd_order_polytransform.png)	![](Dplot_3.png)
+
+In this final step, assuming the Real Estate Company wants to build a new set of houses at a waterfront, along with other specific features such as the ones in the table below, I simply input these features into the predictive model and watch what the price/output of the house would be.
+
+![](Price_Prediction.png)
