@@ -117,4 +117,7 @@ Grade | 8
 ### Recommendations 
 - To save more cost, the Real Estate Company should consider investing in houses with smaller number of floors which would still yield profit and are cheaper to build. The abundance of small houses compared to the scarcity of taller ones shows that conditions in the area favour them more than taller ones.
 - For higher prices, the features which affect the price the most (as analyzed above) should be considered so that potential clients do not avoid the company's houses for already existing better and cheaper options.
-- The predictive model works with 2015/16 housing data and does not put external factors like economic changes into consideration. Thus, either newer data can be used to augment the model's predictive accuracy, or the Real Estate Company manually predicts the price of each type of house they seek to invest in. 
+- The predictive model works with 2015/16 housing data and does not put external factors like economic changes into consideration. Thus, either newer data can be used to augment the model's predictive accuracy, or the Real Estate Company manually predicts the price of each type of house they seek to invest in.
+- 
+## License
+This project is licensed under [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
