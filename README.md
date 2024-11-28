@@ -11,7 +11,7 @@ This project showcases my skills in analyzing housing data and developing predic
 
 ## Skills and Concepts Demonstrated
 - Python Analytics
-- Machine Learning
+- Statistics
 - Regression Analysis
 - Predictive Modeling
 
